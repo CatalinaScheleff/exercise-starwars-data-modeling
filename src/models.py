@@ -20,14 +20,14 @@ class Personaje(Base):
     __tablename__ = 'personaje'
     # Here we define columns for the table person
     # Notice that each column is also a normal Python instance attribute.
-    personaje_id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True)
     personaje_name = Column(String(250), nullable=False)
 
 class Location(Base):
     __tablename__ = 'location'
     # Here we define columns for the table person
     # Notice that each column is also a normal Python instance attribute.
-    location_id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True)
     location_name = Column(String(250), nullable=False)
 
 class Personaje_Favorito(Base):
